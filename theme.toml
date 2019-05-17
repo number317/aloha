@@ -1,0 +1,35 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Aloha"
+license = "MIT"
+licenselink = "https://github.com/number317/aloha/blob/master/LICENSE"
+description = "aloha"
+homepage = "https://github.com/number317/aloha"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "cheon"
+  homepage = "http://www.cheon.site"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true

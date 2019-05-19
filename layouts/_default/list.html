@@ -6,13 +6,15 @@
         </header>
         {{.Content}}
     </article>
-    <ul>
+    <ul id="articles">
     {{ range .Paginator.Pages }}
-        <li>
-            <a href="{{.Permalink}}">{{.Date.Format (.Site.Params.dateform | default "January 2006")}} | {{.Title}}</a>
+        <li id="article">
+            <a href="{{.Permalink}}">
+                <span>
+                    <font class="date">{{.Date.Format (.Site.Params.dateform | default "Jan 2006")}}</font> | {{.Title}}</span>
+            </a>
         </li>
     {{ end }}
     </ul>
-    {{ template "_internal/pagination.html" . }}
 </main>
 {{ end }}

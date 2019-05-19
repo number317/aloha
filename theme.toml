@@ -6,7 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/number317/aloha/blob/master/LICENSE"
 description = "aloha"
 homepage = "https://github.com/number317/aloha"
-tags = []
+tags = ["clean", "simple"]
 features = []
 min_version = "0.41"
 

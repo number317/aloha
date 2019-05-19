@@ -2,17 +2,16 @@
 {{ partial "header.html" . }}
 
 <section>
-  <ul>
+    <ul id="pages">
     {{ range .Paginator.Pages }}
-      <li>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <div>
-          <time>{{ .Date.Format (.Site.Params.dateform | default "January 2006") }}</time>
-        </div>
-      </li>
+        <li id="page">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <div>
+                <time>{{ .Date.Format (.Site.Params.dateform | default "January 2006") }}</time>
+            </div>
+        </li>
     {{ end }}
-  </ul>
-  {{ template "_internal/pagination.html" . }}
+    </ul>
 </section>
 
 {{ partial "footer.html" . }}

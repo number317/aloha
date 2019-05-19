@@ -1,0 +1,20 @@
+#content {
+    min-height: 30rem;
+}
+
+#article {
+    margin: 2rem 0 2rem 0;
+}
+
+#article::after {
+    content: "→";
+    text-align: right;
+}
+
+#article span {
+  position: relative;
+}
+
+.date {
+    font-family: 'Fira Mono', monospace;
+}

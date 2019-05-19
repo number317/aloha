@@ -1,0 +1,21 @@
+<ul class="nav">
+{{ template "nav" (dict "p1" . "p2" .) }}
+</ul>
+{{ define "nav" }}
+{{ if .p1.Parent }}
+{{ template "nav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+{{ else if not .p1.IsHome }}
+{{ template "nav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+{{ end }}
+<li{{ if eq .p1 .p2 }} class="active"{{ end }}>
+    »
+    <a href="{{ .p1.Permalink }}">
+    {{ if or .p1.IsHome .p1.IsPage}}
+    {{ .p1.Title }}
+    {{ else }}
+    {{ with .p1.File }}{{ path.Dir .Dir }}{{ end }}
+    {{ with .p1.Data }}{{ .Plural }}{{ end }}
+    {{ end }}
+    </a>
+</li>
+{{ end }}

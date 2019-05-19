@@ -1,0 +1,19 @@
+<section id="footer">
+<hr/>
+<ul id="categories">
+{{ range .Site.Sections }}
+    <li id="category">
+        <a href="{{ .Permalink }}"><span>{{ .Section }}<span></a>
+    </li>
+{{ end }}
+</ul>
+{{ if .Pages }}
+    {{ template "_internal/pagination.html" . }}
+{{ end }}
+<ul id="link">
+    <li><a href={{ .Site.Data.footer.github.url }} target="_blank"><i class="fa fa-github" alt="github"></i></a></li>
+    <li><a href="mailto:{{ .Site.Data.footer.email.address }}?subject={{ .Site.Data.footer.email.subject }}" target="_blank"><i class="fa fa-envelope" alt="email"></i></a></li>
+    <li id="wechat"><i class="fa fa-wechat"></i></li>
+    <img class="qrcode" src={{ .Site.Data.footer.wechat.qrsrc }}>
+</ul>
+</section>

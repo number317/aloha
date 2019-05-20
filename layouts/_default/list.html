@@ -2,18 +2,20 @@
 <main>
     <article>
         <header>
-            <h1>{{.Title}}</h1>
+            <h2>{{.Title}}</h2>
         </header>
         {{.Content}}
     </article>
     <ul id="articles">
     {{ range .Paginator.Pages }}
         <li id="article">
-            <a href="{{.Permalink}}">
-                <span>
-                    <font class="date">{{.Date.Format (.Site.Params.dateform | default "Jan 2006")}}</font> | {{.Title}}
-                </span>
-            </a>
+            <h3>
+                <a href="{{.Permalink}}">
+                    <span>
+                        <font class="date">{{.Date.Format (.Site.Params.dateform | default "Jan 2006")}}</font> | {{.Title}}
+                    </span>
+                </a>
+            </h3>
             <p>
             {{ substr (.Summary | plainify) 0 150 }}
             </p>

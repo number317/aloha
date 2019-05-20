@@ -9,7 +9,7 @@
 {{ end }}
 <li{{ if eq .p1 .p2 }} class="active"{{ end }}>
     »
-    <a href="{{ .p1.Permalink }}">
+    <a href="{{ .p1.RelPermalink }}">
     {{ if or .p1.IsHome .p1.IsPage}}
     {{ .p1.Title }}
     {{ else }}

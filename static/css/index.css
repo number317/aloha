@@ -1,9 +1,19 @@
 #pages {
+   padding: 0; 
 }
 
 #page {
     list-style: none;
     margin: 2rem 0 0 0;
+}
+
+#page div {
+    float: left;
+    padding: 0 5px 0 0;
+}
+
+#page .tags {
+    clear: none;
 }
 
 #page h2 {

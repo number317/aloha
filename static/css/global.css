@@ -67,3 +67,19 @@ blockquote::before {
     content: ">";
     font-style: normal;
 }
+
+.tags {
+    clear: both;
+    padding: 0;
+}
+
+.tags li {
+    list-style: none;
+    display: inline-block;
+    background: #f6f6f6;
+    padding: 0 5px;
+}
+
+.tags li:hover {
+    background: #ffffff;
+}

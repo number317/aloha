@@ -5,10 +5,17 @@
     <ul id="pages">
     {{ range .Paginator.Pages }}
         <li id="page">
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
             <div>
                 <time>{{ .Date.Format (.Site.Params.dateform | default "January 2006") }}</time>
             </div>
+            <ul class="tags">
+            {{ with .Params.tags }}
+              {{ range . }}
+                <li> <a href="{{ "tags/" | relURL }}{{ . | urlize }}">{{ . }}</a> </li>
+              {{ end }}
+            </ul>
+            {{ end }}
         </li>
     {{ end }}
     </ul>

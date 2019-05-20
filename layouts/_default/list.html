@@ -11,8 +11,12 @@
         <li id="article">
             <a href="{{.Permalink}}">
                 <span>
-                    <font class="date">{{.Date.Format (.Site.Params.dateform | default "Jan 2006")}}</font> | {{.Title}}</span>
+                    <font class="date">{{.Date.Format (.Site.Params.dateform | default "Jan 2006")}}</font> | {{.Title}}
+                </span>
             </a>
+            <p>
+            {{ substr (.Summary | plainify) 0 150 }}
+            </p>
         </li>
     {{ end }}
     </ul>

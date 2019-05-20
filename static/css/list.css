@@ -6,9 +6,13 @@
     margin: 2rem 0 2rem 0;
 }
 
-#article::after {
+#article a::after {
     content: "→";
     text-align: right;
+}
+
+#article p::after {
+    content: "……";
 }
 
 #article span {

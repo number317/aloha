@@ -1,21 +1,21 @@
 #signature {
-    float: right;
+    text-align: right;
 }
 
-.previous {
-    display: block;
-    float: left;
-    text-align: left;
+.related {
+    list-style: none;
+    text-align: justify;
+    text-align-last: justify;
+    padding: 0;
+    margin: 0;
+}
+
+.related li {
+    display: inline-block;
 }
 
 .previous::before {
     content: "«";
-}
-
-.next {
-    display: block;
-    float: right;
-    text-align: right;
 }
 
 .next::after {
@@ -31,4 +31,3 @@
 #content table {
     border: 1px solid #f6f6f6;
 }
-

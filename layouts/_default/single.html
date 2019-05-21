@@ -7,11 +7,9 @@
         </article>
   </div>
 </section>
+
 <aside>
-    <div>
-    <section>
-      <h4 id="signature">{{ .Date.Format "Mon Jan 2, 2006" }} cheon</h4>
-    </section>
+    <h4 id="signature">{{ .Date.Format "Mon Jan 2, 2006" }} cheon</br>{{ .Lastmod.Format "Mon Jan 2, 2006" }} update</h4>
     {{ with .Params.topics }}
     <ul id="topics">
       {{ range . }}
@@ -26,14 +24,13 @@
       {{ end }}
     </ul>
     {{ end }}
-    </div>
-    <div>
+    <ul class="related">
         {{ with .PrevInSection }}
-          <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+        <li><a class="previous" href="{{.Permalink}}"> {{.Title}}</a></li>
         {{ end }}
         {{ with .NextInSection }}
-          <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+        <li><a class="next" href="{{.Permalink}}"> {{.Title}}</a></li>
         {{ end }}
-    </div>
+    </ul>
 </aside>
 {{ end }}

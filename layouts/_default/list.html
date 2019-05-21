@@ -16,9 +16,11 @@
                     </span>
                 </a>
             </h3>
+            {{ if .Site.Params.showSummary }}
             <p>
             {{ substr (.Summary | plainify) 0 150 }}
             </p>
+            {{ end }}
         </li>
     {{ end }}
     </ul>

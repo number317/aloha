@@ -6,7 +6,7 @@ tags = ["markdown", "test"]
 categories = ["post"]
 +++
 
-# Markdown Syntax
+# Learn to Write Markdown
 
 ***This article is porting from [Markdown Guide](https://www.markdownguide.org/basic-syntax/)***
 

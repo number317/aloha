@@ -9,7 +9,16 @@
 </section>
 
 <aside>
-    <h4 id="signature">{{ .Date.Format "Mon Jan 2, 2006" }} cheon</br>{{ .Lastmod.Format "Mon Jan 2, 2006" }} update</h4>
+    <h4 id="signature">
+        {{ .Date.Format "Mon Jan 2, 2006" }}
+        {{ if .GitInfo }}
+            {{ .GitInfo.AuthorName }}
+        {{ else }}
+            noname
+        {{ end }}
+        </br>
+        {{ .Lastmod.Format "Mon Jan 2, 2006" }} update
+    </h4>
     {{ with .Params.topics }}
     <ul id="topics">
       {{ range . }}

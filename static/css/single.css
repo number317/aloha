@@ -1,3 +1,7 @@
+#main > h1 {
+    text-align: center;
+}
+
 #signature {
     text-align: right;
 }
@@ -27,8 +31,16 @@
 }
 
 #content table {
+    overflow: auto;
+    min-width: 50%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#content table th,
+#content table td {
     border: 1px solid #d8d8d8;
-    width: 100%;
+    padding: 5px;
 }
 
 pre {
@@ -66,13 +78,13 @@ code {
 }
 
 #content blockquote {
-    font-style: italic;
     margin: 0;
     padding: 0 5px 0 5px;
 }
 
-#content blockquote p {
+#content blockquote > * {
     padding: 0 2rem;
+    list-style-position: inside;
 }
 
 #content blockquote::before {
@@ -87,4 +99,9 @@ code {
     font-style: normal;
     display: block;
     text-align: right;
+}
+
+#content .task-list {
+    list-style: none;
+    padding: 0;
 }

@@ -1,5 +1,6 @@
 #pages {
    padding: 0; 
+   min-height: 30rem;
 }
 
 #page {

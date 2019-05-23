@@ -101,3 +101,7 @@ code {
     list-style: none;
     padding: 0;
 }
+
+#content a:hover {
+    text-decoration: underline;
+}

@@ -56,3 +56,8 @@ img {
 .tags li:hover {
     background: #ffffff;
 }
+
+time {
+    font-size: 0.8rem;
+    font-family: 'Fira Mono', monospace;
+}

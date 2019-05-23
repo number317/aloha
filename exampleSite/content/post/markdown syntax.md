@@ -41,8 +41,41 @@ This text is ***really important***.
 > - Profits were higher than ever.
 >
 > <details>
->   <summary>lyrics</summary>
->   Life's a dance, we all have to do
+>   <summary>We're all in the dance</summary>
+>   Life's a dance we all have to do  
+>   What does the music require?  
+>   People are moving together  
+>   Close as the flames in a fire  
+>   Feel the beat  
+>   Music and rhyme  
+>   While there is time
+>
+>   We all go round and round  
+>   Partners are lost and found  
+>   Looking for one more chance  
+>   All I know is  
+>   We’re all in the dance
+>
+>   Night and day The music plays on  
+>   We all are part of the show  
+>   While we can hold on to someone  
+>   We know life won’t let us go  
+>   Feel the beat Music and rhyme  
+>   While there is time
+>
+>   We all go round and round  
+>   Partners are lost and found  
+>   Looking for one more chance  
+>   All I know is  
+>   We’re all in the dance  
+>   We’re all in the dance
+>
+>   We all go round and round  
+>   Partners are lost and found  
+>   Looking for one more chance  
+>   All I know is  
+>   We’re all in the dance  
+>   We’re all in the dance
 > </details>
 >
 > *Everything* is going according to **plan**.

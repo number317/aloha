@@ -1,6 +1,7 @@
 {{ define "main" }}
 <section id="main">
   <h1>{{ .Title }}</h1>
+  <time>{{ .Lastmod.Format "Mon Jan 2, 2006" }} update</time>
   <div>
         <article id="content">
            {{ .Content }}
@@ -16,8 +17,6 @@
         {{ else }}
             noname
         {{ end }}
-        </br>
-        {{ .Lastmod.Format "Mon Jan 2, 2006" }} update
     </h4>
     {{ with .Params.topics }}
     <ul id="topics">

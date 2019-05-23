@@ -42,6 +42,7 @@ This text is ***really important***.
 >
 > <details>
 >   <summary>We're all in the dance</summary>
+>
 >   Life's a dance we all have to do  
 >   What does the music require?  
 >   People are moving together  

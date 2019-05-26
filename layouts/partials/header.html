@@ -1,8 +1,8 @@
 <section id="header">
-    <h1 id="title"><a href="/">{{ .Site.Params.sitename }}</a></h1>
     <ul id="menus">
     {{ range .Site.Menus.main }}
-    <li id="menu"><a href="{{ .URL }}"><span>{{ .Name }}</span></a></li>
+    <li class="menu"><a href="{{ .URL }}"><span>{{ .Name }}</span></a></li>
     {{ end }}
     </ul>
+    <h1 id="title"><a href="/">{{ .Site.Params.sitename }}</a></h1>
 </section>

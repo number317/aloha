@@ -1,11 +1,11 @@
 {{ define "main" }}
 <section id="main">
   <h1>{{ .Title }}</h1>
-  <time>{{ .Lastmod.Format "Mon Jan 2, 2006" }} update</time>
+  <time>Last updated {{ .Lastmod.Format "Mon Jan 2, 2006" }}</time>
   <div>
-        <article id="content">
-           {{ .Content }}
-        </article>
+      <article id="content">
+          {{ .Content }}
+      </article>
   </div>
 </section>
 

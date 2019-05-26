@@ -1,28 +1,32 @@
+html {
+    font-size: 100%;
+}
+
 body {
     text-align: left;
     padding: 2rem;
     margin: 0 auto;
     border: 0;
-    line-height: 160%;
     vertical-align: baseline;
-    max-width: 55rem;
+    max-width: 50rem;
     font-family: 'Old Standard TT', 'Noto Sans SC', sans-serif;
+    font-weight: thin;
     word-wrap: break-word;
 }
 
 h1 {
+    font-size: 2rem;
     font-weight: 500;
-    font-size: 2.0rem;
 }
 
 h2 {
+    font-size: 1.6rem;
     font-weight: 400;
-    font-size: 1.8rem;
 }
 
 h3 {
-    font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 a {
@@ -42,7 +46,6 @@ img {
 }
 
 .tags {
-    clear: both;
     padding: 0;
 }
 
@@ -55,9 +58,4 @@ img {
 
 .tags li:hover {
     background: #ffffff;
-}
-
-time {
-    font-size: 0.8rem;
-    font-family: 'Fira Mono', monospace;
 }

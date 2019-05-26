@@ -1,15 +1,13 @@
 <section id="footer">
-<hr/>
-<ul id="categories">
-{{ range .Site.Sections }}
-    <li id="category">
-        <a href="{{ .Permalink }}"><span>{{ .Section }}<span></a>
-    </li>
-{{ end }}
-</ul>
 {{ if .Pages }}
     {{ template "_internal/pagination.html" . }}
 {{ end }}
+<div id="author">
+    <h2>About Author</h2>
+    <hr>
+    <img src={{ .Site.Data.footer.author.image }}></img>
+    <p>{{ .Site.Data.footer.author.description }}</p>
+</div>
 <ul id="link">
     <li><a href={{ .Site.Data.footer.github.url }} target="_blank"><i class="fa fa-github" alt="github"></i></a></li>
     <li><a href="mailto:{{ .Site.Data.footer.email.address }}?subject={{ .Site.Data.footer.email.subject }}" target="_blank"><i class="fa fa-envelope" alt="email"></i></a></li>

@@ -21,6 +21,15 @@ pygmentsCodefencesGuessSyntax = true
 [[menu.main]]
     name = "Fork Me"
     url  = "https://github.com/number317/aloha.git"
+    weight = 1
+[[menu.main]]
+    name = "Categories"
+    url  = "/categories"
+    weight = 2
+[[menu.main]]
+    name = "Tags"
+    url  = "/tags"
+    weight = 3
     
 [privacy]
   [privacy.disqus]

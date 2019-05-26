@@ -2,8 +2,8 @@
 title = "Markdown Syntax"
 date = 2019-05-21T06:55:56Z
 draft = false
-tags = ["markdown", "test"]
-categories = ["post"]
+tags = ["markdown"]
+categories = ["hello"]
 +++
 
 # Learn to Write Markdown

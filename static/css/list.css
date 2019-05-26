@@ -18,3 +18,7 @@
 #article span {
   position: relative;
 }
+
+.date {
+    font-family: 'Fira Mono', monospace;
+}

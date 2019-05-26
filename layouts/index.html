@@ -4,7 +4,7 @@
 <section>
     <ul id="pages">
     {{ range .Paginator.Pages }}
-        <li id="page">
+        <li class="page">
             <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
             <ul class="tags">
                 <li class="time"><time>{{ .Date.Format (.Site.Params.dateform | default "January 2006") }}</time></li>

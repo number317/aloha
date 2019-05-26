@@ -1,22 +1,28 @@
 #header {
-    margin: 0 0 5rem 0;
-}
-#title {
-    text-align: center;
-}
-#menus {
-    text-align: center;
-    padding: 0;
-}
-#menu {
-    display: inline-block;
+    margin: 0;
 }
 
-#menu span {
+#title {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 100%;
+}
+
+#menus {
+    text-align: left;
+    padding: 0;
+}
+
+.menu {
+    display: inline-block;
+    margin: 0 1rem 0 0;
+}
+
+.menu span {
     position: relative;
 }
 
-#menu span::before {
+.menu span::before {
   content: '';
   position: absolute;
   left: 50%;
@@ -29,6 +35,6 @@
   transition: transform 0.3s ease-in-out;
 }
 
-#menu span:hover::before {
+.menu span:hover::before {
   transform: translate(-50%, 0) scaleX(1);
 }

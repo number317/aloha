@@ -1,6 +1,8 @@
 <head>
     <meta charset="utf-8">
+    <meta name="description" content={{ .Site.Params.description }}>
 
+    <link rel="icon" href={{ "/favicon.ico" | relURL }}>
     <link rel="stylesheet" href={{ "css/global.css" | relURL }}>
     <link rel="stylesheet" href={{ "css/nav.css" | relURL }}>
     <link rel="stylesheet" href={{ "css/header.css" | relURL }}>
@@ -12,5 +14,6 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Noto+Sans+SC|Old+Standard+TT&display=swap" rel="stylesheet">
     {{ end }}
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>{{ .Site.Params.sitename }}</title>
 
 </head>

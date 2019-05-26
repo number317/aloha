@@ -1,4 +1,4 @@
-baseURL = "https://localhost:1313"
+baseURL = "http://localhost:1313/"
 title = "Aloha Theme Example Site"
 theme = "aloha"
 author = "noname"

@@ -12,7 +12,7 @@ Inside the folder of your Hugo site run:
 git submodule add https://github.com/number317/aloha.git themes/aloha
 ```
 
-For more information read the official [setup guide](For more information read the official setup guide of Hugo.) of Hugo.
+For more information read the official [quick start](https://gohugo.io/getting-started/quick-start/) of Hugo.
 
 # Config
 

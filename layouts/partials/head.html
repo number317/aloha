@@ -1,8 +1,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content={{ .Site.Params.description }}>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href={{ "/favicon.ico" | relURL }}>
+    <link rel="apple-touch-icon" sizes= "76x76" href={{ "/img/apple-touch-icon.png" | relURL }}>
+    <link rel="icon" href={{ "/img/pen.svg" | relURL }}>
     <link rel="stylesheet" href={{ "css/global.css" | relURL }}>
     <link rel="stylesheet" href={{ "css/nav.css" | relURL }}>
     <link rel="stylesheet" href={{ "css/header.css" | relURL }}>

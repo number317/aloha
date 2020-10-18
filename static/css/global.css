@@ -7,10 +7,8 @@ body {
     padding: 2rem;
     margin: 0 auto;
     border: 0;
-    vertical-align: baseline;
     max-width: 50rem;
     font-family: 'Old Standard TT', 'Noto Sans SC', sans-serif;
-    font-weight: thin;
     word-wrap: break-word;
 }
 

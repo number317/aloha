@@ -1,8 +1,8 @@
-.nav {
+#nav {
     padding: 0;
     text-align: left;
 }
-.nav li {
+#nav li {
     list-style: none;
     display: inline-block;
 }

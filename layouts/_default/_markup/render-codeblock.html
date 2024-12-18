@@ -1,0 +1,16 @@
+{{ $id := printf "code-%s" (md5 .Inner) }}
+{{ if isset . "Language" }}
+<div class="code-block code-block-container">
+  <pre><code {{ with .Language }}class="language-{{ . }}"{{ end }} id="{{ $id }}">{{ .Inner }}</code></pre>
+  <button class="copy-code-button" onclick="(copyCode('{{ $id }}', this)" title="copy">
+    <i class="fa fa-copy"></i>
+  </button>
+</div>
+{{ else }}
+<div class="code-block code-block-container-indented">
+  <pre><code id="{{ $id }}">{{ .Inner }}</code></pre>
+  <button class="copy-code-button" onclick="copyCode('{{ $id }}', this)" title="copy">
+    <i class="fa fa-copy"></i>
+  </button>
+</div>
+{{ end }}

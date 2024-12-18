@@ -17,7 +17,10 @@
     {{ if not .Site.Params.disableWebFonts }}
     <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Noto+Sans+SC|Old+Standard+TT&display=swap" rel="stylesheet">
     {{ end }}
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    {{ if eq .Kind "page" }}
+    <script src={{ "js/single.js" | relURL }}></script>
+    {{ end }}
     <title>{{ .Site.Params.sitename }}</title>
 
 </head>

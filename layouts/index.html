@@ -6,6 +6,11 @@
     {{ range .Paginator.Pages }}
         <li class="page">
             <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            {{ if .Site.Params.showSummary }}
+            <p class="summary">
+            {{ substr (.Summary | plainify) 0 150 }}...
+            </p>
+            {{ end }}
             <ul class="tags">
                 <li class="time"><time>{{ .Date.Format (.Site.Params.dateform | default "January 2006") }}</time></li>
             {{ with .Params.tags }}

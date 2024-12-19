@@ -17,7 +17,7 @@
                 </a>
             </h3>
             {{ if .Site.Params.showSummary }}
-            <p>
+            <p class="summary">
             {{ substr (.Summary | plainify) 0 150 }}
             </p>
             {{ end }}

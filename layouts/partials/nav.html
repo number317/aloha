@@ -12,6 +12,8 @@
     <a href="{{ .p1.RelPermalink }}">
     {{ if or .p1.IsHome .p1.IsPage}}
     {{ .p1.Title }}
+    {{ else if eq .p1.Kind "term" }}
+    {{ .p1.Title }}
     {{ else }}
     {{ with .p1.File }}{{ path.Dir .Dir }}{{ end }}
     {{ with .p1.Data }}{{ .Plural }}{{ end }}

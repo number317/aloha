@@ -14,6 +14,11 @@ git submodule add https://github.com/number317/aloha.git themes/aloha
 
 For more information read the official [quick start](https://gohugo.io/getting-started/quick-start/) of Hugo.
 
+# Feature
+
+- [x] Code block copy, supporting code blocks with indentation formatting
+- [x] Image preview
+
 # Config
 
 Copy the [config.toml](https://github.com/number317/aloha/blob/master/exampleSite/config.toml) from this themes exampleSite to your Hugo site or use it as a reference.

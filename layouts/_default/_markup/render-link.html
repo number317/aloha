@@ -1,0 +1,3 @@
+<a href="{{ .Destination | safeURL }}" target="_blank" rel="noopener noreferrer" {{ with .Title }} title="{{ . }}"{{ end }}>
+  {{ .Text | safeHTML }}
+</a>
